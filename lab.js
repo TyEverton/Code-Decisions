@@ -203,9 +203,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the 'letters' array. Console-log every item in the array.
 */
 
-
-for (i = 0; i < letters.length; i--) {
-  console.log(letters[i])
+for (let i = letters.length -1; i >= 0; i--) {
+  let letters2 = letters[i];
+  console.log(letters2)
 }
 
 
@@ -228,8 +228,23 @@ If D: "The student is not doing very well."
 If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
-
-//Code Here
+switch (letterGrade) {
+  case 'A':
+        console.log ('The student is doing execellently!')
+        break;
+  case 'B':
+        console.log ('The student is doing well!')
+        break;
+  case 'C':
+        console.log ('The student is doing alright.')
+        break;
+  case 'D':
+        console.log ('The student is not doing very well.')
+        break;
+  case  'F':
+        console.log ('The student is failing.')
+        break;
+}
 
 
 
@@ -258,4 +273,3 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
   ...
 */
 
-//Code Here
